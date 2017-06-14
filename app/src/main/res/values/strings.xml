@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">美车网</string>
+    <string name="my_text1">商品收藏（8）</string>
+    <string name="my_text2">浏览记录</string>
+    <string name="my_text3">账户管理）</string>
+    <string name="my_text4">全部订单</string>
+    <string name="my_text5">查看全部订单</string>
+    <string name="my_text6">待付款</string>
+    <string name="my_text7">待评价</string>
+    <string name="my_text8">返修/退款</string>
+    <string name="my_text9">管理地址</string>
+    <string name="my_text10">扫一扫去强红包啦</string>
+    <string name="my_text11">我的钱包</string>
+    <string name="my_text12">我的积分</string>
+    <string name="my_text13">红包</string>
+    <string name="my_text14">账户余额</string>
+    <string name="my_text15">帮助与反馈</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+</resources>

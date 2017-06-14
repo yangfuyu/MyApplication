@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bc.mcapp">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name=".ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.FirstActivity"/>
+        <activity android:name=".ui.activity.LogoViewpagerActivity"/>
+        <activity android:name=".ui.activity.RegisterPhoneActivity"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.RegisterNextActivity"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.LoginActivity"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.GoodsInfoActivity"/>
+        <activity android:name=".ui.activity.Act_Address"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_AddressItem"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_Advice"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_Brithday"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_Collection"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_Myaccount"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_Score"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_Setmessage"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_Updatename"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_Updatepwd"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_Updatesex"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_EWCode"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_SearchClas"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_SingleGoodsInfo"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".ui.activity.Act_OrderPay"
+            android:theme="@style/NoTitleBarTheme"
+            />
+        <activity android:name=".common.alipaly.PayDemoActivity"
+            />
+
+
+
+
+      <!--  <activity
+            android:name="com.bc.mcapp.common.alipaly.H5PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+-->
+        <!-- alipay sdk begin -->
+      <!--  <activity
+            android:name="com.bc.mcapp.common.alipaly.PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>-->
+
+        <!-- alipay sdk end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

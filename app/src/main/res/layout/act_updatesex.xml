@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/Theme"
+        android:layout_height="60dp"
+    >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="性别修改"
+            android:textSize="18sp"
+            android:textColor="@color/write" />
+
+        <ImageView
+            android:id="@+id/updatesex_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/aqj" />
+        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_alignParentBottom="true"
+        />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rela_nan"
+    android:layout_width="match_parent"
+    android:background="@color/write"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/sex_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:text="男" />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_below="@+id/sex_tv1"
+        />
+
+    <ImageView
+        android:id="@+id/sex_ok1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/dui"
+         />
+
+</RelativeLayout>
+ <RelativeLayout
+     android:id="@+id/rela_nv"
+    android:layout_width="match_parent"
+    android:background="@color/write"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/sex_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:text="女" />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_below="@+id/sex_tv2"
+        />
+
+    <ImageView
+        android:id="@+id/sex_ok2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/dui"
+         />
+
+</RelativeLayout>
+ <RelativeLayout
+     android:id="@+id/rela_baomi"
+    android:layout_width="match_parent"
+    android:background="@color/write"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/sex_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:text="保密" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_below="@+id/sex_tv3"
+        />
+
+    <ImageView
+        android:id="@+id/sex_ok3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+      android:background="@mipmap/dui"
+        />
+
+</RelativeLayout>
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            android:id="@+id/updateSex_tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_tv_bg"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="完成"
+            android:enabled="false"
+            android:textColor="@color/write" />
+    </RelativeLayout>
+</LinearLayout>

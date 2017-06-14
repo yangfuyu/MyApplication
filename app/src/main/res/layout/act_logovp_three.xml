@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/che3" >
+
+    <Button
+        android:id="@+id/act_logo3_btnComein"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:alpha="0.3"
+        android:textSize="25sp"
+        android:text="进入美车网"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp" />
+
+</RelativeLayout>

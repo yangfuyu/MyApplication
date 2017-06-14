@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:background="@color/Theme"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/iv_Se_topBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/aqj"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <AutoCompleteTextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/autTV_Se_top"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:completionThreshold="1"
+           	android:dropDownSelector="#EEEFEA"
+           	android:dropDownWidth="match_parent"
+           	android:dropDownHeight="wrap_content"
+           	android:background="@null"
+            android:hint="搜索"
+             />
+      
+
+        <ImageView
+            android:id="@+id/iv_Se_topGo"
+             android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/bjz"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+   	 <ListView
+         android:visibility="gone"
+        android:id="@+id/lv_Se_listviewOne"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" >
+    </ListView>
+    
+
+
+    <TextView
+        android:id="@+id/tv_Se_topTvDeleAll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="清空历史搜索"
+        android:visibility="gone"
+        android:background="@color/background"
+        />
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/lv_Se_listviewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

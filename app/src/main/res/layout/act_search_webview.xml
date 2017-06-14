@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:background="@color/Theme"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/iv_Se_topBack_comein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/axm" />
+
+        <TextView
+            android:id="@+id/tv_Se_topTv_comein"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="您要找的内容" />
+
+        <ImageView
+            android:id="@+id/iv_Se_topClose_comein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/axl" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/act_search_xiangxi" />
+
+
+</LinearLayout>

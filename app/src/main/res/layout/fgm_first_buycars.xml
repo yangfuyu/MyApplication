@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/Theme"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:textColor="@color/write"
+            android:textSize="25sp"
+            android:id="@+id/fgm_bc_ThemeTv"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textColor="@color/write"
+            android:textSize="20sp"
+            android:id="@+id/fgm_bc_tvEdit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:id="@+id/view1" />
+    <View
+        android:id="@+id/fgm_bc_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/fgm_bc_relayout"
+        android:background="@color/line"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fgm_bc_relayout"
+        >
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+
+            <CheckBox
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/fgm_bc_CkboxAll"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/fgm_bc_selcheck"
+                android:button="@null"
+                android:checked="false" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="全选"
+                android:textSize="14sp"
+                android:id="@+id/fgm_quanxuan"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/fgm_bc_CkboxAll"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="合计"
+                    android:id="@+id/textView"
+                    android:textColor="@color/text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/fgm_bc_AllPrice"
+                    android:layout_toStartOf="@+id/fgm_bc_AllPrice" />
+
+                <TextView
+                    android:id="@+id/fgm_bc_AllPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/Theme"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:text="0"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="29dp"
+                    android:layout_marginEnd="29dp" />
+
+                <TextView
+                    android:id="@+id/fgm_bc_AllGoodsNums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text"
+                    android:text="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignRight="@+id/fgm_bc_AllPrice"
+                    android:layout_alignEnd="@+id/fgm_bc_AllPrice" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/fgm_bc_JieSuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="去结算"
+                android:saveEnabled="false"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/login_tv_bg"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fgm_bc_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/fgm_bc_relayout"
+        android:background="@color/line"
+        />
+    <ScrollView
+        android:id="@+id/fgm_bc_scroll"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_above="@id/fgm_bc_line2"
+        >
+
+        <com.bc.mcapp.common.CustomListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fgm_bc_listview"
+
+            />
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/fgm_bc_tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您还未登录，请登录再查看详情!"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bb2"
+    tools:context=".ui.activity.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#FF0099"
+        android:alpha="0.5"
+        android:background="@drawable/text_welcome"
+        android:text="美车网" />
+
+    	 <TextView
+    	     android:id="@+id/fgm_me_tvLogin"
+    	     android:layout_width="wrap_content"
+    	     android:layout_height="wrap_content"
+    	     android:layout_below="@+id/textView1"
+    	     android:layout_centerHorizontal="true"
+    	     android:layout_marginTop="101dp"
+    	     android:text="为您的爱车提供最好的平台"
+    	     android:textColor="#ffffff"
+    	     android:textSize="24sp"
+    	     android:textStyle="bold" />
+
+    	 <ProgressBar
+    	     android:id="@+id/progressBar1"
+    	     style="@style/myProgressBarStyleLarge"
+    	     android:layout_width="80dp"
+    	     android:layout_height="80dp"
+    	     android:layout_below="@+id/fgm_me_tvLogin"
+    	     android:layout_centerHorizontal="true"
+    	     android:indeterminateDuration="700"
+    	     android:layout_marginTop="49dp" />
+    	
+</RelativeLayout>

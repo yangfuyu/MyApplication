@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/Theme"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:text="杨宇"
+            android:textColor="@color/write"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="178****5719"
+            android:textColor="@color/write"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginRight="20dp"
+            android:lines="2"
+            android:text="大兴区六环外天宫院街道大兴二职"
+            android:textColor="@color/write"
+            android:textSize="14sp" />
+
+        
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@+id/relative1"
+        android:id="@+id/address_line"
+            android:layout_width="match_parent"
+			android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/address_update"
+        android:layout_below="@+id/address_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+       >
+
+        <ImageView
+            android:id="@+id/iv_moren"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ah9" />
+
+        <TextView
+            android:id="@+id/tv_moren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/text"
+            android:layout_toRightOf="@+id/iv_moren"
+            android:text="默认地址" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textSize="14sp"
+			android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/tv_delete"
+            android:background="@drawable/fgm_goods_text"
+            android:text="删除" />
+
+
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+			android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/tv_delete"
+            android:background="@drawable/fgm_goods_text"
+            android:text="修改" />
+
+
+
+    </RelativeLayout>
+    
+     <TextView
+        android:layout_below="@+id/address_update"
+        android:id="@+id/address_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+     <TextView
+        android:layout_below="@+id/address_line2"
+        android:id="@+id/address_line3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#eef2f3" />
+
+
+
+
+        <TextView
+            android:id="@+id/updateAddress_tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_tv_bg"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:enabled="false"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="完成"
+            android:textColor="@color/text"
+            android:layout_marginBottom="47dp"
+            android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

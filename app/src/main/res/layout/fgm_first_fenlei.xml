@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/background"
+    >
+
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_weight="1"
+       >
+
+       <!-- 左侧菜单 -->
+       <ListView
+           android:id="@+id/fgm_fenlei_leftList"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scrollbars="none"
+           android:background="@color/write"
+           >
+       </ListView>
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        >
+
+        <!-- 右侧 -->
+    <com.bc.mcapp.common.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/fgm_fenlei_topIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@mipmap/ic_launcher"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐品牌"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical|left"
+                        />
+
+
+
+                </LinearLayout>
+
+                <com.bc.mcapp.common.CustomGridView
+                    android:id="@+id/fgm_fenlei_subGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:background="@color/write"
+                    />
+
+
+            </LinearLayout>
+
+
+    </com.bc.mcapp.common.CustomScrollView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

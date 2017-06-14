@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/Theme"
+        android:orientation="horizontal"
+        android:gravity="center|right"
+        >
+        <TextView
+            android:id="@+id/fgm_bc_lvItemN_tvOk"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textSize="20sp"
+            android:textColor="@color/write"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <CheckBox
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/fgm_bc_lvItemN_Ckbox"
+                android:background="@drawable/fgm_bc_selcheck"
+                android:button="@null"
+                android:checked="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/fgm_bc_lvItemN_ivGoods"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:weightSum="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/fgm_bc_lvItemSlin"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="8"
+                    >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="2"
+                        android:id="@+id/fgm_bc_lvItemS_btnJian"
+                        android:textColor="@color/text"
+                        android:text="-"
+                        />
+
+                    <EditText
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:id="@+id/fgm_bc_et_nums"
+                        />
+
+                    <Button
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="+"
+                        android:id="@+id/fgm_bc_lvItemS_btnJia"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/fgm_bc_lvItemS_Delete"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="删除"
+                    android:textColor="@color/write"
+                    android:background="@color/Theme"
+                    />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/fgm_bc_lvItemNlin"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="四季亚麻坐垫"
+                        android:id="@+id/fgm_bc_lvItemN_tvGoodName"
+                        android:textSize="18sp"
+                        android:textColor="@color/text"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="四季亚麻坐垫"
+                        android:id="@+id/fgm_bc_lvItemN_tvGoodInfo"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机专享"
+                        android:background="@drawable/fgm_bc_tviphone"
+                        android:textColor="@color/write"
+                        android:id="@+id/fgm_bc_lvItemN_tvIphone"
+                        />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="￥:"
+                    android:textSize="20sp"
+                    android:textColor="@color/Theme"
+                    android:id="@+id/fgm_bc_tvGoodsClr"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="166"
+                    android:textSize="20sp"
+                    android:textColor="@color/Theme"
+                    android:id="@+id/fgm_bc_tvGoodsN_Price"
+                    />
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="26sp"
+                    android:id="@+id/fgm_bc_tvGoodsN_Nums"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+
+
+</LinearLayout>

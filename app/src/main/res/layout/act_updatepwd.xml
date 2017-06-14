@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/Theme"
+    >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="账户安全"
+            android:textSize="18sp"
+            android:textColor="@color/write" />
+
+        <ImageView
+            android:id="@+id/updatepwd_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/aqj" />
+        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_alignParentBottom="true"
+        />
+
+    </RelativeLayout>
+<!--这是没实现隐藏的功能oldpwd-->
+<RelativeLayout
+
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/old_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:text="原始密码" />
+
+    <EditText
+        android:id="@+id/et_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/old_tv"
+        android:ems="10"
+        android:hint="请输入原始密码"
+        
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+<TextView 
+    
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_below="@+id/old_tv"
+    android:background="@color/line"
+    />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/new_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:text="新密码" />
+
+    <EditText
+        android:id="@+id/et_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/new_tv"
+        android:ems="10"
+        android:hint="请输入新密码"
+        
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+<TextView 
+    
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_below="@+id/new_tv"
+    android:background="@color/line"
+    />
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/new_tv_agion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:text="新密码" />
+
+    <EditText
+        android:id="@+id/et_new_agion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/new_tv_agion"
+        android:ems="10"
+        android:hint="确认新密码"
+        
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+<TextView 
+    
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_below="@+id/new_tv_agion"
+    android:background="@color/line"
+    />
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/update_pwd_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:textColor="@color/Theme"
+     />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/update_pwd_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/text"
+        android:layout_marginRight="20dp"
+        android:enabled="false"
+        
+        android:background="@drawable/login_tv_bg"
+        android:text="确认" />
+
+</LinearLayout>
+
+</LinearLayout>
