@@ -22,6 +22,7 @@ import org.xutils.x;
  * Created by admins on 2016/10/19.
  */
 public class UserBizImpl implements UserBiz {
+
     private OnUSerInfo onUSerInfo;
     private RequestQueue queue;
 
